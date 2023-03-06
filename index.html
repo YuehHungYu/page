@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>輪播 頁面動畫</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+</head>
+<body>
+  <!-- 單圖片輪播 -->
+  <div id="ImgBox" class="ImgBox">
+    <img src="imgs/1.jpg" id="img1">
+    <div id="left" class="left" ></div>
+    <div id="right" class="right"></div>
+  </div>
+
+  <!-- 頁面動畫 -->
+  <div class="pageBox"data-aos="fade-up"
+  data-aos-duration="3000"
+  data-aos-delay="300">
+    <div class="scroll-element">
+      <img src="imgs/main.jpg">
+    </div>
+  </div>
+
+  <!-- 多圖輪播 -->
+  <div class="container bg-secondary p-5">
+    <div class="slider responsive">
+      <div>
+        <img src="imgs/img2/11.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/22.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/33.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/44.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/111.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/222.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/333.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/444.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/1111.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/2222.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/3333.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+      <div>
+        <img src="imgs/img2/4444.jpg" alt="">
+        <p>小可愛夏天</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('.responsive').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    });
+  </script>
+  
+
+
+  <script src="app.js"></script>
+</body>
+</html>

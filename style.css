@@ -1,0 +1,65 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+.ImgBox{
+  height: 500px;
+  position: relative;
+  margin-top:5%;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+#right,#left{
+  width: 60px;
+  height: 70px;
+  background-color: #fd7878;
+  opacity: 0.5;
+}
+
+#left{
+  border-top-right-radius:2em ;
+  border-bottom-right-radius:2em ;
+}
+
+#right{
+  border-top-left-radius:2em ;
+  border-bottom-left-radius:2em ;
+}
+
+#left{
+  position: absolute;
+  top:220px;
+  left: 0px;
+}
+
+#right{
+  position: absolute;
+  top: 220px;
+  right: 0px;
+}
+
+.pageBox{
+  height:800px;
+  position: relative;
+  margin: 150px 0;
+}
+
+.scroll-element{
+  width: 100%;
+  height: 100%;
+}
+
+
+.slider div img{
+  width: 200px;
+  height: 200px;
+}
+
+.slider div p{
+  padding-top: 5px;
+}
